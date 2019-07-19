@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar color="primary">
+      <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+    <ion-title>Feedback</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-list>
+    <ion-item>
+        <ion-label position="floating">Email Address</ion-label>
+        <ion-input type="text" #useremail></ion-input>
+      </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Your Review</ion-label>
+    <ion-textarea type="text" #feed></ion-textarea>
+  </ion-item>
+</ion-list>
+<div class="ion-text-center">
+    <ion-button color="secondary" (click)="onSend()"><div [ngStyle]="{color: '#049fd8'}">Send</div></ion-button>
+  </div>
+</ion-content>
